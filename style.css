@@ -15,7 +15,7 @@ body {
     align-items: center;
     border-radius: 20px;
     position: fixed;
-    top: 20px;
+    top: 15px;
     left: 20px;
     width: 90%;
 }
@@ -32,6 +32,56 @@ body {
 }
 
 .Header-image img {
-    margin-top: 70px;
+    margin-top: 50px;
     width: 60%;
 }   
+
+.Price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+}
+
+.Price h1 {
+    font-weight: 900;
+}
+
+.Price p {
+    font-weight: 500;
+}
+
+.Contents,
+.Description {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: auto 15px;
+}
+
+.Contents h2,
+.Description h2 {
+    margin: 10px 0;
+}
+
+.Description p {
+    margin-bottom: 15px;
+}
+
+.Amounts-main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Amount1,
+.Amount2 {
+    display: flex;
+}
+
+.Amount1 p,
+.Amount2 p{
+    margin-left: 5px;
+    font-weight: bold;
+}
