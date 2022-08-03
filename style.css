@@ -18,6 +18,13 @@ header {
     align-items: center;
 }
 
+.Header-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .Box-header {
     background-color: #fff;
     display: flex;
@@ -171,8 +178,14 @@ label{
     cursor: pointer;
 }
 
-@media(max-width: 375px){
-    .Header-image img {
-        height: 50vh;
-    }
+@media(max-width: 950px){
+
+}
+
+@media(max-width: 768px){
+
+}
+
+@media(max-width: 540px){
+
 }
