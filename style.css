@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 body {
@@ -28,6 +32,11 @@ header {
 .Box-header img {
     width: 10%;
     margin: 0 20px;
+}
+
+.Box-header h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
 }
 
 .Header-image {
@@ -85,11 +94,46 @@ header {
 .Amount1,
 .Amount2 {
     display: flex;
+    width: 40%;
     margin-right: 40px;
 }
 
-.Amount1 p,
-.Amount2 p{
+.Amount1 label,
+.Amount2 label {
+    cursor: pointer;
+}
+
+.Amount1 input,
+.Amount2 input {
+    appearance: none;
+    border: 2px solid #924e00;
+    width: 15%;
+    height: 3vh;
+    cursor: pointer;
+    border-radius: 50%;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Amount1 input::before,
+.Amount2 input::before {
+    content: '';
+    position: absolute;
+    height: 2vh;
+    width: 3%;
+    background: #924e00;
+    border-radius: 20px;
+    opacity: 0;
+}
+
+.Amount1 input:checked:before,
+.Amount2 input:checked:before {
+    opacity: 1;
+}
+
+label{
     margin-left: 5px;
     font-weight: bold;
 }
@@ -107,6 +151,7 @@ header {
 .End {
     height: 8vh;
     background-color: #000;
+    cursor: pointer;
 }
 
 .Buttons button,
@@ -117,11 +162,13 @@ header {
 
 .Buttons button {
     font-size: 2em;
+    cursor: pointer;
 }
 
 .End button {
-    font-size: 1.3em;
+    font-size: 1.3em;  
     color: #fff;
+    cursor: pointer;
 }
 
 @media(max-width: 375px){
