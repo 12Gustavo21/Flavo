@@ -27,7 +27,7 @@
     <main>
       <section class="Price">
         <h1>COSINESS</h1>
-        <h2>$15</h2>
+        <h2 class="money">$15 or $30</h2>
       </section>
       <section class="Contents">
         <h2>WHAT'S INSIDE</h2>
@@ -42,23 +42,23 @@
       </section>
       <section class="Amounts-main">
         <section class="Amount1">
-          <input type="radio" id="1" name="qtt" value"qqt1" />
-          <label for="1">BAG (75g)</label>
+          <input onclick="cart()" type="radio" id="1" name="qtt" value"qqt1" />
+          <label for="1" onClick="firstPrice()">BAG (75g)</label>
         </section>
         <section class="Amount2">
-          <input type="radio" id="2" name="qtt" value"qqt2"/>
-          <label for="2">JAR (150g)</label>
+          <input onclick="cart()" type="radio" id="2" name="qtt" value"qqt2"/>
+          <label for="2" onClick="secondPrice()">JAR (150g)</label>
         </section>
       </section>
     </main>
 
     <footer>
       <section class="Buttons">
-        <button>-</button>
-        <h1>1</h1>
-        <button>+</button>
+        <button onclick ="remove()">-</button>
+        <h1 class="quantity">0</h1>
+        <button onclick ="add()">+</button>
       </section>
-      <section class="End">
+      <section class="End" onclick="cart()">
         <button>ADD TO CART</button>
       </section>
     </footer>

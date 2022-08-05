@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -34,16 +34,25 @@ header {
     position: fixed;
     top: 15px;
     width: 90%;
+    height: 6vh;
 }
 
 .Box-header img {
-    width: 10%;
+    width: 11%;
     margin: 0 20px;
+    transition: .5s all;
+}
+
+.Box-header img:active,
+.Box-header h1:active {
+    transform: scale(.8);
 }
 
 .Box-header h1 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Dancing Script', cursive;
     font-weight: bold;
+    font-size: 2em;
+    transition: .5s all;
 }
 
 .Header-image {
@@ -69,8 +78,8 @@ header {
     font-weight: 900;
 }
 
-.Price p {
-    font-weight: 500;
+.Price h2 {
+    font-weight: bold;
 }
 
 .Contents,
