@@ -8,6 +8,53 @@
     font-family: 'Nanum Gothic', sans-serif;
 }
 
+.Window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #000;
+    width: 70%;
+    height: 40vh;
+    opacity: .9;
+    border-radius: 20px;
+    flex-direction: column;
+    color: #fff;
+    display: none;
+    animation: animate;
+    animation-duration: 800ms;
+}
+
+@keyframes animate {
+    from{opacity: 1;}
+    from{opacity: 0;}
+}
+
+.Window h1 {
+    font-size: 2em;
+    text-align: center;
+    margin: 30px 20px;
+}
+
+.Window p {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.Window button {
+    cursor: pointer;
+    background: #5bfd3b;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.5em;
+    width: 20%;
+    height: 5vh;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
 body {
     background-color: #eda232;
 }

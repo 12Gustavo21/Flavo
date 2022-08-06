@@ -27,11 +27,19 @@ function remove() {
   }
 }
 
-function cart() {
+function show() {
+  let window = document.querySelector(".Window")
+  window.style.display = 'block';
+}
+
+function Cart() {
+  let window = document.querySelector(".Window")
+  window.style.display = 'none';
+}
+
+function Ok() {
   if (counter < 20 || counter > 0) {
-    alert("items added to cart successfully")
     location.reload()
-    window.navigator.vibrate(300);
     screen()
   }
 }
