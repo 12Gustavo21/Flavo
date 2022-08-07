@@ -25,8 +25,8 @@ function add() {
   if (counter < 20) {
     counter = counter + 1
     quantity.innerText = counter
-    firstPrice();
-    secondPrice();
+  firstPrice();
+  secondPrice();
   }
 }
 
@@ -41,6 +41,9 @@ function remove() {
 
 function show() {
   let window = document.querySelector(".Window")
+  let Bag = document.querySelector(".Bag")
+  Bag.style.background = '#ff2828';
+  Bag.style.borderRadius = '10px';
   window.style.display = 'block';
 }
 

@@ -93,6 +93,7 @@ header {
 .Box-header img {
     width: 11%;
     margin: 0 20px;
+    cursor: pointer;
     transition: .5s all;
 }
 
