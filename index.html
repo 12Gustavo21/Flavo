@@ -23,7 +23,7 @@
         <section class="Box-header">
           <img src="img/ingles.png" alt="Menu" />
           <h1>Flavo</h1>
-          <img src="img/2.png" alt="Bag" class="Bag"/>
+          <img src="img/2.png" alt="Bag" class="Shopping" />
         </section>
         <section class="Header-image">
           <img src="img/cosiness.png" alt="packing" />
@@ -49,12 +49,14 @@
       </section>
       <section class="Amounts-main">
         <section class="Amount1">
-          <input type="radio" id="1" name="qtt" value"qqt1" />
-          <label for="1" onclick="firstPrice()">BAG (75g)</label>
+          <input onchange="firstPrice()" type="radio" id="Bag" name="qtt"
+          value"qqt1" />
+          <label for="Bag">BAG (75g)</label>
         </section>
         <section class="Amount2">
-          <input type="radio" id="2" name="qtt" value"qqt2"/>
-          <label for="2" onclick="secondPrice()">JAR (150g)</label>
+          <input onChange="secondPrice()" type="radio" id="Jar" name="qtt"
+          value"qqt2"/>
+          <label for="Jar">JAR (150g)</label>
         </section>
       </section>
     </main>
