@@ -1,29 +1,41 @@
 const money = document.querySelector(".money")
-let priceOne = "$15"
-let priceTwo = "$30"
+let priceOne = 15
+let priceTwo = 30
 
 function firstPrice() {
-  money.innerText = priceOne
+  money.innerText = ("$") + (priceOne * counter)
 }
 
 function secondPrice() {
-  money.innerText = priceTwo
+  money.innerText = ("$") + (priceTwo * counter)
+}
+
+function subtraction1() {
+  money.innerText = ("$") + (counter * priceOne)
+}
+
+function subtraction2() {
+  money.innerText = ("$") + (counter * priceTwo)
 }
 
 const quantity = document.querySelector(".quantity")
-let counter = 0
+let counter = 1
 
 function add() {
   if (counter < 20) {
     counter = counter + 1
-    screen()
+    quantity.innerText = counter
+    firstPrice();
+    secondPrice();
   }
 }
 
 function remove() {
   if (counter > 1) {
     counter = counter - 1
-    screen()
+    quantity.innerText = counter
+    subtraction1();
+    subtraction2();
   }
 }
 
@@ -40,10 +52,6 @@ function Cart() {
 function Ok() {
   if (counter < 20 || counter > 0) {
     location.reload()
-    screen()
+    window.navigator.vibrate(300);
   }
-}
-
-function screen() {
-  quantity.innerText = counter
 }
